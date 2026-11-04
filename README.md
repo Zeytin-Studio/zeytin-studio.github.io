@@ -1,48 +1,49 @@
-# Zeytin Studio — web sitesi
+# Zeytin Studio — Official Website
 
-Stüdyonun tanıtım sitesi ve Play Store için gizlilik politikası.
+Official bilingual (Turkish / English) website for **Zeytin Studio**, an independent mobile puzzle game studio.
 
-## Klasör yapısı
+**Live website:** https://zeytin-studio.github.io/  
+**Privacy policy:** https://zeytin-studio.github.io/gizlilik/  
+**English privacy policy:** https://zeytin-studio.github.io/gizlilik/?lang=en
 
-```
-index.html            Ana sayfa (oyunlar, iletişim)
-gizlilik/index.html   Gizlilik politikası (TR + EN)
-app-ads.txt           AdMob doğrulama dosyası
-assets/style.css      Stiller (açık + koyu tema)
-assets/site.js        Dil seçimi ve e-posta kopyalama
-assets/favicon.svg    Zeytin ikonu
-```
+## Games
 
-## Yayınlama (GitHub Pages, ücretsiz)
+| Game | Genre | Status |
+| --- | --- | --- |
+| Renkli Oklar | Arrow puzzle | Coming soon to Google Play |
+| Toplam Zinciri | Number puzzle | In development |
+| Işık Yolu | Light and mirror puzzle | In development |
 
-1. GitHub'da sağ üstteki **+ → New organization** ile `zeytinstudio` adında ücretsiz bir organizasyon açın.
-   Ad alınmışsa `zeytin-studio` gibi bir varyasyon seçin; aşağıdaki adreslerde de onu kullanın.
-2. Organizasyonun içinde **zeytinstudio.github.io** adında **public** bir repo oluşturun.
-   Repo adı organizasyon adıyla birebir aynı olmalı, yoksa site o adreste açılmaz.
-3. Bu klasördeki tüm dosyaları repoya yükleyin (**Add file → Upload files**, sürükle-bırak yeterli).
-4. **Settings → Pages** bölümünde kaynağın **Deploy from a branch → main → / (root)** olduğundan emin olun.
-5. Birkaç dakika içinde site yayında olur:
-   - Ana sayfa: `https://zeytinstudio.github.io/`
-   - Gizlilik politikası: `https://zeytinstudio.github.io/gizlilik/`
-   - İngilizce gizlilik politikası: `https://zeytinstudio.github.io/gizlilik/?lang=en`
+The website contains concept illustrations and descriptions; no unverified store links are displayed.
 
-## Yayına almadan önce
+## Site structure
 
-- [ ] **E-posta:** `zeytinstudio@gmail.com` adresini açın ya da tüm dosyalarda kendi adresinizle değiştirin
-      (`index.html` ve `gizlilik/index.html`).
-- [ ] **app-ads.txt:** `pub-0000000000000000` yerine kendi AdMob yayıncı kimliğinizi yazın.
-      AdMob → **Ayarlar → Hesap bilgileri → Yayıncı kimliği**.
-- [ ] **Reklam onay formu:** Politikada Avrupa kullanıcılarına onay formu gösterildiği yazıyor.
-      Uygulamaya Google UMP (User Messaging Platform) eklenmiş olmalı.
-- [ ] **Hedef kitle:** Politika "13 yaş altına yönelik değil" diyor. Play Console'da hedef yaş grubunu buna uygun seçin.
+- `index.html` — bilingual homepage, game details, about, contact, SEO metadata
+- `assets/style.css` — responsive light/dark theme
+- `assets/site.js` — language switching and copy-email interaction
+- `assets/favicon.svg` — studio icon
+- `assets/social-preview.svg` — social sharing artwork (SVG)
+- `gizlilik/index.html` — existing Turkish and English privacy policy
+- `app-ads.txt` — existing advertising verification file
+- `robots.txt` and `sitemap.xml` — search engine discovery
 
-## Play Console'da kullanılacak alanlar
+## Publishing
 
-- **Gizlilik politikası URL'si:** `https://zeytinstudio.github.io/gizlilik/`
-- **Web sitesi (mağaza kaydı → iletişim bilgileri):** `https://zeytinstudio.github.io/`
-  AdMob, `app-ads.txt` dosyasını bu adreste arar. Web sitesi alanını doldurmazsanız AdMob doğrulaması yapılamaz.
+This repository is the GitHub Pages site for the **Zeytin-Studio** organization. The expected publishing source is `main` at repository root.
 
-## Yeni oyun eklemek
+1. Edit the HTML/CSS/JS files and commit to `main`.
+2. Confirm deployment in repository **Settings → Pages** or **Actions**.
+3. Open https://zeytin-studio.github.io/ and verify both language versions and the privacy policy.
 
-`index.html` içinde bir `<article class="game">` bloğunu kopyalayıp adı, açıklamayı ve durumu değiştirin.
-Oyun yayınlandığında `chip soon` etiketini Play Store linkine çevirebilirsiniz.
+## Adding or updating a game
+
+In `index.html`, edit the relevant `article.game` card, including its language-specific text and expandable `details.game-details` section. Update status labels only when a milestone is confirmed. Add a real Google Play link only after the store listing exists.
+
+## Important compliance checks
+
+- Confirm the contact address `zeytinsstudio@gmail.com` is monitored.
+- Verify `app-ads.txt` contains the correct AdMob publisher identifier; it is intentionally not changed by the website refresh.
+- Check that the privacy policy accurately describes the data processing and SDKs in the **actual shipped apps**. In particular, confirm any AdMob consent/UMP claims before release.
+- Confirm Google Play target audience and data safety declarations match the apps.
+
+The website refresh does **not** change the privacy policy or advertising configuration.
