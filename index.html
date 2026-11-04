@@ -3,7 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Zeytin Studio</title>
+<title>Zeytin Studio | Bağımsız Bulmaca Oyunları</title>
+<link rel="canonical" href="https://zeytin-studio.github.io/">
+<meta name="theme-color" content="#5C6C1F">
+<meta name="robots" content="index, follow">
+<meta property="og:url" content="https://zeytin-studio.github.io/">
+<meta property="og:site_name" content="Zeytin Studio">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:image" content="https://zeytin-studio.github.io/assets/social-preview.svg">
+<meta property="og:image:alt" content="Zeytin Studio — Small puzzles, big delight">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Zeytin Studio | Independent Puzzle Games">
+<meta name="twitter:description" content="Small puzzles, big delight. Discover our upcoming Android puzzle games.">
+<meta name="twitter:image" content="https://zeytin-studio.github.io/assets/social-preview.svg">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Zeytin Studio","url":"https://zeytin-studio.github.io/","description":"Independent mobile puzzle game studio in Türkiye.","email":"zeytinsstudio@gmail.com"}</script>
 <meta name="description" content="Zeytin Studio — küçük, keyifli bulmaca oyunları. Small, delightful puzzle games.">
 <meta property="og:title" content="Zeytin Studio">
 <meta property="og:description" content="Küçük bulmacalar, büyük keyif. Small puzzles, big delight.">
@@ -28,6 +42,7 @@
   </a>
   <nav class="nav" aria-label="Menü">
     <a href="#oyunlar"><span class="tr">Oyunlar</span><span class="en">Games</span></a>
+    <a href="#hakkimizda"><span class="tr">Hakkımızda</span><span class="en">About</span></a>
     <a href="#iletisim"><span class="tr">İletişim</span><span class="en">Contact</span></a>
     <a href="gizlilik/"><span class="tr">Gizlilik</span><span class="en">Privacy</span></a>
     <span class="lang" role="group" aria-label="Dil / Language">
@@ -45,6 +60,7 @@
       <h1 class="en">Small puzzles, <em>big delight.</em></h1>
       <p class="lede tr">Zeytin Studio, birkaç dakikalık molalara sığan, sade ve akıllıca tasarlanmış bulmaca oyunları yapar. Oyunlarımız ücretsizdir.</p>
       <p class="lede en">Zeytin Studio makes clean, clever puzzle games that fit into a few spare minutes. Our games are free to play.</p>
+      <div class="hero-actions"><a class="primary-link" href="#oyunlar"><span class="tr">Oyunları keşfet</span><span class="en">Explore games</span> <span aria-hidden="true">↗</span></a><a class="secondary-link" href="#hakkimizda"><span class="tr">Stüdyoyu tanı</span><span class="en">Meet the studio</span></a></div>
     </div>
     <div class="hero-mark" aria-hidden="true">
       <svg viewBox="0 0 200 220">
@@ -64,7 +80,7 @@
       <p class="sub en">Each one is built around a single idea, with puzzles that get harder level by level.</p>
 
       <div class="games">
-        <article class="game">
+        <article class="game" id="renkli-oklar">
           <div class="art" aria-hidden="true">
             <svg viewBox="0 0 160 100">
               <g transform="translate(20 10)">
@@ -82,9 +98,10 @@
           <p class="tr">Her ok kendi yönüne kayar. Doğru sırayı bul, tahtayı temizle.</p>
           <p class="en">Every arrow slides the way it points. Find the right order and clear the board.</p>
           <div class="meta"><span class="tr">Ok bulmacası</span><span class="en">Arrow puzzle</span><span>Android</span></div>
+          <details class="game-details"><summary><span class="tr">Oyun hakkında daha fazla</span><span class="en">Learn more about the game</span></summary><p class="tr">Okların yönlerini dikkatle incele, hamle sırasını planla ve tahtayı temizle. Renkli Oklar, basit kurallarla başlayıp düşünerek ilerlediğin bir bulmaca fikridir.</p><p class="en">Study the direction of each arrow, plan the order of your moves, and clear the board. Renkli Oklar is a puzzle concept built around simple rules and thoughtful sequencing.</p><p class="detail-state"><span class="tr">Durum: Yakında Google Play'de</span><span class="en">Status: Coming soon to Google Play</span></p></details>
         </article>
 
-        <article class="game">
+        <article class="game" id="toplam-zinciri">
           <div class="art" aria-hidden="true">
             <svg viewBox="0 0 160 100">
               <line class="link" x1="30" y1="34" x2="80" y2="34"/>
@@ -103,9 +120,10 @@
           <p class="tr">Sayıları birbirine bağla, zincirin toplamını hedefe ulaştır.</p>
           <p class="en">Link numbers together and bring the chain's sum to the target.</p>
           <div class="meta"><span class="tr">Sayı bulmacası</span><span class="en">Number puzzle</span><span>Android</span></div>
+          <details class="game-details"><summary><span class="tr">Oyun hakkında daha fazla</span><span class="en">Learn more about the game</span></summary><p class="tr">Sayıları bir zincirde birleştirerek hedef toplamı yakalamaya çalış. Toplam Zinciri, bağlantı kurma ve sayı mantığını bir araya getirir.</p><p class="en">Connect numbers into a chain and aim for the target sum. Toplam Zinciri combines number reasoning with a connecting puzzle mechanic.</p><p class="detail-state"><span class="tr">Durum: Geliştiriliyor</span><span class="en">Status: In development</span></p></details>
         </article>
 
-        <article class="game">
+        <article class="game" id="isik-yolu">
           <div class="art" aria-hidden="true">
             <svg viewBox="0 0 160 100">
               <circle class="grid-dot" cx="40" cy="20" r="2"/><circle class="grid-dot" cx="80" cy="20" r="2"/><circle class="grid-dot" cx="120" cy="20" r="2"/>
@@ -123,10 +141,13 @@
           <p class="tr">Aynaları çevir, ışığı yansıt ve hedefe ulaştır.</p>
           <p class="en">Turn the mirrors, bounce the light and guide it to the target.</p>
           <div class="meta"><span class="tr">Işık ve ayna bulmacası</span><span class="en">Light &amp; mirror puzzle</span><span>Android</span></div>
+          <details class="game-details"><summary><span class="tr">Oyun hakkında daha fazla</span><span class="en">Learn more about the game</span></summary><p class="tr">Aynaların yönlerini değiştir, ışığın yolunu tasarla ve hedefe ulaş. Işık Yolu, yansıma mantığına dayalı bir bulmaca fikridir.</p><p class="en">Rotate mirrors, shape the path of light, and reach the target. Işık Yolu explores reflection-based puzzle mechanics.</p><p class="detail-state"><span class="tr">Durum: Geliştiriliyor</span><span class="en">Status: In development</span></p></details>
         </article>
       </div>
     </div>
   </section>
+
+  <section id="hakkimizda" class="about-intro"><div class="wrap"><div class="eyebrow"><span class="tr">Stüdyomuz</span><span class="en">Our studio</span></div><h2><span class="tr">Kısa molalara, akılda kalan bulmacalar.</span><span class="en">Thoughtful puzzles for little breaks.</span></h2><p class="sub tr">Türkiye'den bağımsız bir mobil oyun stüdyosuyuz. Kolay öğrenilen, çözmesi keyifli oyun fikirleri geliştiriyoruz. Oyunlarımızın durumunu yukarıdaki kartlardan takip edebilirsiniz.</p><p class="sub en">We're an independent mobile game studio based in Türkiye, exploring easy-to-learn puzzle ideas that are satisfying to solve. Follow each game's development status above.</p></div></section>
 
   <section id="iletisim">
     <div class="wrap split">
