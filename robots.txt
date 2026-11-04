@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://zeytin-studio.github.io/sitemap.xml
